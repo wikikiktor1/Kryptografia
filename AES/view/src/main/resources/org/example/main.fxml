@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.view.MainController">
+   <children>
+      <TextArea fx:id="textArea" layoutX="25.0" layoutY="280.0" prefHeight="120.0" prefWidth="950.0" promptText="Wpisz tekst" />
+      <TextArea fx:id="output" editable="false" layoutX="25.0" layoutY="470.0" prefHeight="120.0" prefWidth="950.0" />
+      <Text layoutX="25.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Input" wrappingWidth="342.13671875" />
+      <Text layoutX="25.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output" />
+      <Button fx:id="wczytanie" layoutX="840.0" layoutY="65.0" mnemonicParsing="false" onAction="#Wczytaj" text="Wczytaj plik" />
+      <Button fx:id="zaszyfruj" layoutX="889.0" layoutY="253.0" mnemonicParsing="false" onAction="#Zaszyfruj" text="Zaszyfruj" />
+      <Button fx:id="deszyfruj" layoutX="884.0" layoutY="443.0" mnemonicParsing="false" onAction="#Deszyfruj" text="Deszyfruj" />
+      <TextField fx:id="textField" layoutX="54.0" layoutY="78.0" promptText="Wpisz klucz" />
+      <Button fx:id="generuj" layoutX="239.0" layoutY="44.0" mnemonicParsing="false" onAction="#Generuj" text="Wygeneruj klucz" />
+      <Button fx:id="zastosuj" layoutX="239.0" layoutY="78.0" mnemonicParsing="false" onAction="#Zastosuj" text="Zastosuj klucz" />
+      <Button fx:id="zapis" layoutX="845.0" layoutY="31.0" mnemonicParsing="false" onAction="#Zapisz" text="Zapisz plik" />
+      <ComboBox fx:id="combo" layoutX="54.0" layoutY="44.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
