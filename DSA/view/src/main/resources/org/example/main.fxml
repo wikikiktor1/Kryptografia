@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.view.MainController">
+   <children>
+      <TextArea fx:id="textArea" layoutX="25.0" layoutY="280.0" prefHeight="120.0" prefWidth="950.0" promptText="Wpisz tekst" />
+      <TextArea fx:id="output" editable="false" layoutX="25.0" layoutY="470.0" prefHeight="120.0" prefWidth="950.0" />
+      <Text layoutX="25.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tekst" wrappingWidth="342.13671875" />
+      <Text layoutX="25.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Podpis" />
+      <Button fx:id="wczytanie" layoutX="462.0" layoutY="100.0" mnemonicParsing="false" onAction="#Wczytaj" text="Wczytaj plik" />
+      <Button fx:id="podpisz" layoutX="889.0" layoutY="253.0" mnemonicParsing="false" onAction="#Podpisz" text="Podpisz" />
+      <Button fx:id="sprawdz" layoutX="884.0" layoutY="443.0" mnemonicParsing="false" onAction="#Sprawdz" text="Sprawdź" />
+      <Button fx:id="zapis" layoutX="465.0" layoutY="20.0" mnemonicParsing="false" onAction="#Zapisz" text="Zapisz plik" />
+      <Button fx:id="wczKlucz" layoutX="457.0" layoutY="180.0" mnemonicParsing="false" onAction="#WczytajKlucz" text="Wczytaj klucz" />
+      <Button fx:id="sygantura" layoutX="443.0" layoutY="140.0" mnemonicParsing="false" onAction="#WczytajSygn" text="Wczytaj Sygnaturę" />
+      <Button fx:id="zapKlucz" layoutX="462.0" layoutY="60.0" mnemonicParsing="false" onAction="#ZapiszKlucz" text="Zapisz klucz" />
+   </children>
+</AnchorPane>
